@@ -167,6 +167,17 @@ border-radius: 0;
 	grid-gap: 1.5rem;
 }
 
+@media (max-width: 768px){
+	.blog-post-grid{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 576px){
+	.blog-post-grid{
+		grid-template-columns: 1fr;
+	}
+}
+
 .blog-post{
 	position: relative;
 	width: 100%;

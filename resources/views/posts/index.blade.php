@@ -14,7 +14,8 @@
 			<img class="img-responsive div-fill-min div-fill-max" src="/asset-resources/page-assets/images/afrfood-1280.jpg" alt="African food">
 		</picture>
 		<div class="carousel-caption text-left caption-text">
-			<p>29.31.2017</p>
+			<p>FEATURED POST</p>
+			<small>29.31.2017</small>
 			<h1>HEALTHY FOOD<br>ON A BUDGET</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed accumsan euismod sem. Phasellus tellus dui, tincidunt </p>
 			<a href="csoon.html"><button class="btn btn-light">Read More</button></a>
@@ -26,7 +27,7 @@
 	<section class="blog-grid"> 
 		<div class="blog-post-grid"> 
 			
-			@if (count($posts) > 1)
+			@if (count($posts) > 0)
 				@foreach ($posts as $post)
 					<div class="blog-post">  
 						<img src="/asset-resources/page-assets/images/blogpost1.jpg" class="img-responsive" alt="Blog post"> 
@@ -337,9 +338,9 @@
 					</div>
 				</a>
 			</div>-->
-		</div>	
+		</div>
+		{{$posts->links('pagination::simple-tailwind')}}	
 	</section>
-
 	<!--Call to action section-->
 	<section class="row no-margin position-relative">
 		<div class="col-md-12 no-padding position-relative">
