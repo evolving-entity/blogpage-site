@@ -15,8 +15,8 @@
 		</picture>
 		<div class="carousel-caption text-left caption-text">
 			<p>29.31.2017</p>
-			<h1>HEALTHY FOOD</br>ON A BUDGET</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>Sed accumsan euismod sem. Phasellus tellus dui, tincidunt </p>
+			<h1>HEALTHY FOOD<br>ON A BUDGET</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed accumsan euismod sem. Phasellus tellus dui, tincidunt </p>
 			<a href="csoon.html"><button class="btn btn-light">Read More</button></a>
 		</div>
 		</div>
@@ -25,7 +25,38 @@
 	<!--Blog post items CSS Grid-->
 	<section class="blog-grid"> 
 		<div class="blog-post-grid"> 
-
+			
+			@if (count($posts) > 1)
+				@foreach ($posts as $post)
+					<div class="blog-post">  
+						<img src="/asset-resources/page-assets/images/blogpost1.jpg" class="img-responsive" alt="Blog post"> 
+						<div class="carousel-caption blog-title text-left no-padding">
+							<h6 class="small">BLOG</h6>
+						</div>
+						<div class="carousel-caption blog-icons">
+							<a href="#">
+								<img class="blog-icon" src="/asset-resources/page-assets/images/facebook.png">
+							</a>
+							<a href="#">
+								<img class="blog-icon" src="/asset-resources/page-assets/images/twitter.png">
+							</a>
+							<a href="csoon.html">
+								<img class="blog-icon" src="/asset-resources/page-assets/images/heart.png">
+							</a>
+						</div>
+						<a href="/posts/{{$post->id}}">
+							<div class=" carousel-caption text-left blog-text">
+								<p>{{$post->created_at}}</p>
+								<h3><small>{{$post->title}}</small></h3>
+								<p>{{$post->body}}</p>
+							</div>
+						</a>
+					</div>
+				@endforeach
+			@else
+				<p>No Posts Found</p>
+			@endif
+			<!--
 			<div class="blog-post">  
 				<img src="/asset-resources/page-assets/images/blogpost1.jpg" class="img-responsive" alt="Blog post"> 
 				<div class="carousel-caption blog-title text-left no-padding">
@@ -102,7 +133,7 @@
 						<p>Lorem ipsum dolor sit amet</p>
 					</div>
 				</a>
-			</div>
+			</div>-->
 							
 
 			<!--Rows two and three - First item spans two rows
@@ -149,7 +180,7 @@
 					</div>
 				</div>
 			</div>-->
-
+			<!--
 			<div class="blog-post"> 
 				<img src="/asset-resources/page-assets/images/blogpost7.jpg" class="img-responsive" alt="Blog post">
 				<div class="carousel-caption blog-title text-left no-padding">
@@ -305,7 +336,7 @@
 						<p>Lorem ipsum dolor sit amet</p>
 					</div>
 				</a>
-			</div>
+			</div>-->
 		</div>	
 	</section>
 

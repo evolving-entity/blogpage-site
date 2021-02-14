@@ -17,7 +17,7 @@
                 <a class="nav-link" href="/services">SERVICES</a>
               </li> 
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link" href="/#cta">CONTACT</a>
+                <a class="nav-link" href="/posts">BLOG</a>
               </li><!--
               <li class="nav-item d-flex align-items-center">
                   <div class="search-box">

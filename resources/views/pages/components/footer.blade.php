@@ -13,7 +13,7 @@
                 <a class="nav-link text-white" href="/services"> SERVICES </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="/#cta"> CONTACT </a>
+                <a class="nav-link text-white" href="/posts"> BLOG </a>
             </li>
         </ul>
     </nav>
