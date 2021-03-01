@@ -183,6 +183,11 @@ border-radius: 0;
 	width: 100%;
 }
 
+.blog-post:hover .blog-title{
+	background-color: #064f5c;
+	transition: .6s;
+}
+
 .blog-title{
 	display: flex;
 	align-items: center;
