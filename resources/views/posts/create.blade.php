@@ -4,7 +4,7 @@
 @endphp
 
 @section('content')
-    <div class="posts-container px-4 py-5">
+    <div class="container px-4 py-5">
         <h1>Create a Post!</h1>
         <form action="PostsController@store" method="POST">
             <div class="form-group">
@@ -13,7 +13,7 @@
             </div>
             <div class="form-group">
                 <label for="body">Blog Content</label>
-                <input type="textarea" name="body" id="body" class="form-control" placeholder="What is it about?" >
+                <textarea name="body" id="body" class="form-control" placeholder="What is it about?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Upload</button>
         </form>
